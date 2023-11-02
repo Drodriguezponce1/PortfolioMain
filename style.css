@@ -57,8 +57,8 @@ h2 {
 }
 
 .event:hover {
-    background-color: #860038;
-    color: #fff;
+    background-color: #fff;
+    color: #860038;
     transform: scale(1.03);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
