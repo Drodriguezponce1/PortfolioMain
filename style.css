@@ -1,88 +1,136 @@
-/* Reset some default styles */
-body, h1, h2, h3, p {
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    color: #e0e0e0; /* Light gray text for good contrast */
+    background-color: #1b1b1b; /* Dark background */
 }
 
-body {
-    font-family: 'Lobster', cursive;
-    background: linear-gradient(45deg, #860038, #efba08);
-    text-align: center;
-    color: #75787B;
-}
-
+/* Header */
 header {
-    background: #860038;
-    color: #fff;
+    background: #990000; /* Sith red */
+    color: #ffffff; /* White text */
     padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
 }
 
-h1 {
-    font-size: 48px;
+header .header-content h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
     text-transform: uppercase;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
 }
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.day {
-    margin-top: 20px;
-    border-bottom: 2px solid #860038;
-    padding-bottom: 20px;
-}
-
-h2 {
-    font-size: 36px;
-    color: #efba08;
+header .header-content p {
+    font-style: italic;
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 
-.event {
-    border: 2px solid #860038;
-    padding: 20px;
-    margin: 20px 0;
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.event:hover {
-    background-color: #860038;
-    
-    transform: scale(1.03);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
 }
 
-.event:hover h3{
-    color: #fff;
-}
-
-.time {
+header nav ul li a {
+    color: #ff3333; /* Bright Sith red */
+    text-decoration: none;
     font-weight: bold;
-    color: #efba08;
-    font-size: 24px;
+    transition: color 0.3s ease;
 }
 
-.details h3 {
-    font-size: 28px;
-    color: #860038;
+header nav ul li a:hover {
+    color: #ffffff; /* Hover effect: white */
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #2a2a2a; /* Dark gray */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    border: 1px solid #990000; /* Red border for Sith vibe */
+}
+
+section h2 {
+    margin-top: 0;
+    color: #ff3333; /* Bright Sith red */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Project Cards */
+.project, ul {
     margin: 10px 0;
 }
 
-.details p {
-    color: #75787B;
-    font-style: italic;
+.project a {
+    color: #ff6666; /* Lighter red for project links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-/* Google Fonts link for custom font */
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.project a:hover {
+    color: #ffffff; /* Hover effect: white */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #000000; /* Pitch black */
+    color: #ff3333; /* Bright Sith red */
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Buttons and Links */
+button, a {
+    display: inline-block;
+    background: #990000; /* Sith red */
+    color: #ffffff;
+    padding: 2px 2px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+button:hover, a:hover {
+    background: #ff3333; /* Hover effect: brighter red */
+    color: #000000;
+}
+
+/* List Styling */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* For Contact Info */
+#contact a {
+    color: #ff6666; /* Lighter Sith red */
+    text-decoration: underline;
+}
+
+#contact a:hover {
+    color: #ffffff;
+}
